@@ -91,4 +91,5 @@ tm=m/parseFloat(totest)*100 + "%"
 
 document.getElementById("resulh").value=th;
 document.getElementById("resulm").value=tm;
+
 }
