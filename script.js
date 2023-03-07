@@ -123,3 +123,23 @@ function a(){
     document.getElementById("resul").value=mult;
 
 }
+function num(){
+    n1=document.getElementById("1").value;
+    n2=document.getElementById("2").value;
+    n3=document.getElementById("3").value;
+    if (isNaN(n1), isNaN(n2), isNaN(n3)) {
+        alert("Por favor ingrese un número válido.");
+        document.getElementById("1").value = "";
+        document.getElementById("2").value = "";
+        document.getElementById("3").value = "";
+        return;
+    }
+if(n1>n2 && n1>n3){
+    res=n1
+}else if(n2>n1 && n2>n3){
+    res=n2
+}else if(n3>n1 && n3>n1){
+    res=n3
+}
+document.getElementById("resul").value=res;
+}
