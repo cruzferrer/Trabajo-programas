@@ -93,3 +93,13 @@ document.getElementById("resulh").value=th;
 document.getElementById("resulm").value=tm;
 
 }
+function algo(){
+    edad=document.getElementById("edad").value.trim();
+    if (edad === "" || isNaN(edad) || edad.length >4 )  {
+        alert("Por favor ingrese un número válido.");
+        document.getElementById("edad").value = "";
+        return;
+    }
+año= new Date().getFullYear()- parseInt(edad)
+document.getElementById("resul").value=año;
+}
