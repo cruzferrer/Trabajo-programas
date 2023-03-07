@@ -35,3 +35,43 @@ function des(){
     document.getElementById("resul").value=desct;
     
 }
+function prom(){
+    p1=document.getElementById("p1").value;
+    p2=document.getElementById("p2").value;
+    p3=document.getElementById("p3").value;
+    if (isNaN(p1), isNaN(p2), isNaN(p3)) {
+        alert("Por favor ingrese un número válido.");
+        document.getElementById("p1").value = "";
+        document.getElementById("p2").value = "";
+        document.getElementById("p3").value = "";
+        return;
+    }
+ 
+        
+    
+    ex=document.getElementById("Ex").value;
+    if (isNaN(ex)) {
+        alert("Por favor ingrese un número válido.");
+        document.getElementById("Ex").value = "";
+        return;
+    }
+    tf=document.getElementById("tfin").value;
+    if (isNaN(tf)) {
+        alert("Por favor ingrese un número válido.");
+        document.getElementById("tfin").value = "";
+        return;
+    }
+
+    par= parseFloat(p1)+parseFloat(p2)+parseFloat(p3)
+    a=par/3
+    prompar= a*5.5
+   
+    calex=ex*3.0
+    tfi=tf*1.5
+
+    
+    t=parseFloat(prompar)+parseFloat(calex)+parseFloat(tfi)
+    tin=t/10
+    document.getElementById("resul").value=tin;
+    
+}
