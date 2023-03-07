@@ -23,4 +23,15 @@ function base(){
     t=parseFloat(tot)+parseFloat(tot)+parseFloat(tot)+parseFloat(b)
     document.getElementById("resul").value=t;
 }
-function 
+function des(){
+    din=document.getElementById("dine").value;
+    if (isNaN(din)) {
+        alert("Por favor ingrese un número válido.");
+        document.getElementById("dine").value = "";
+        return;
+    }
+    desc=din*0.15
+    desct=parseFloat(din)-parseFloat(desc)
+    document.getElementById("resul").value=desct;
+    
+}
