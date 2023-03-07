@@ -11,4 +11,16 @@ function cap(){
     document.getElementById("resul").value=t;
     
 }
+function base(){
+    alert("hola")
+    b=document.getElementById("sul").value;
+    if (isNaN(b)) {
+        alert("Por favor ingrese un número válido.");
+        document.getElementById("sul").value = "";
+        return;
+    }
+    tot=b*0.1
+    t=parseFloat(tot)+parseFloat(tot)+parseFloat(tot)+parseFloat(b)
+    document.getElementById("resul").value=t;
+}
 function 
