@@ -165,3 +165,25 @@ function extra(){
     }
     document.getElementById("resula").value=horas;
 }
+function utili(){
+    n=document.getElementById("util").value;
+    if (isNaN(n)) {
+        alert("Por favor ingrese un número válido.");
+        document.getElementById("util").value = "";
+        return;
+
+    }
+    if (n!==0, n==1){
+        p="recibira 5% mas del salario"
+    } else if(n>1 , n<3){
+        p="recibira 7% mas del salario"
+    } else if(n>2 , n<6){
+        p="recibira 10% mas del salario"
+    } else if(n>5 , n<11){
+        p="recibira 15% mas del salario"
+    } else if(n>10){
+        p="recibira 20% mas del salario"
+    }
+    document.getElementById("resule").value=p;
+
+}
