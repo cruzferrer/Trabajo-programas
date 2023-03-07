@@ -75,3 +75,20 @@ function prom(){
     document.getElementById("resul").value=tin;
     
 }
+function promes(){
+   h=document.getElementById("Hom").value;
+   m=document.getElementById("Muj").value;
+   if (isNaN(h), isNaN(m)) {
+    alert("Por favor ingrese un número válido.");
+    document.getElementById("Hom").value = "";
+    document.getElementById("Muj").value = "";
+    return;
+
+}
+totest=parseFloat(h)+parseFloat(m)
+th=h/parseFloat(totest)*100 + "%"
+tm=m/parseFloat(totest)*100 + "%"
+
+document.getElementById("resulh").value=th;
+document.getElementById("resulm").value=tm;
+}
