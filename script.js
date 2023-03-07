@@ -143,3 +143,25 @@ if(n1>n2 && n1>n3){
 }
 document.getElementById("resul").value=res;
 }
+function extra(){
+    n1=document.getElementById("tra").value;
+    if (isNaN(n1)) {
+        alert("Por favor ingrese un número válido.");
+        document.getElementById("tra").value = "";
+        return;
+
+    }
+    if (n1==40||n1<41){
+        horas="se le pagaran horas normales"
+    }else if(n1>40){
+        no=parseFloat(n1)-40
+        if (no<8){
+         horas="se le pagaran 40 horas mas"+ no +" horas extra al doble"
+        }else if(no>8){
+            xd=parseFloat(no)-8
+            horas ="se le pagaran 40 horas mas 8 horas dobles mas"+xd+" horas triples" 
+        }
+        
+    }
+    document.getElementById("resula").value=horas;
+}
