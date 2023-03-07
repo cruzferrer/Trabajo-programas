@@ -103,4 +103,23 @@ function algo(){
 año= new Date().getFullYear()- parseInt(edad) + " años"
 document.getElementById("resul").value=año;
 }
-function 
+function a(){
+    
+    n1=document.getElementById("1").value;
+    n2=document.getElementById("2").value;
+    if (isNaN(n1), isNaN(n2)) {
+        alert("Por favor ingrese un número válido.");
+        document.getElementById("1").value = "";
+        document.getElementById("2").value = "";
+        return;
+    }
+    if (n1 == n2) {
+        mult = parseFloat(n1) * parseFloat(n2);
+    } else if (n1 > n2) {
+        mult = parseFloat(n1) - parseFloat(n2);
+    } else if(n1<n2){
+        mult = parseFloat(n1) + parseFloat(n2);
+    }
+    document.getElementById("resul").value=mult;
+
+}
